@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> Tester Page </title>
+<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+    <script>
+        var x = generateActivationCode('VANHELSING', '34234', '134234');
+        document.write(x);
+        document.write('<br/>');
+        var y = generateActivationCode2('VANHELSING Limited(sg)', '34234', '134234', '5');
+        document.write(y);
+		
+        document.write('<br/>');
+        var y = generateActivationCode2('VANHELSING Limited(sg)', '34234', '134234', '555');
+        document.write(y);
+        document.write('<br/>');
+        var z = decodeActivation(y);
+        document.write(z.company + "|" + z.serial + "|" + z.registration + "|" + z.maxuser);
+    </script>
+</body>
+</html>
