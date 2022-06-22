@@ -1,6 +1,0 @@
-{
-	apihost: "ableacctgapi.1able.com.au",
-	apiport: 80,
-	apiprotocol: "http",
-	apimethod: "activate"
-}
